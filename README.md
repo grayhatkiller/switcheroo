@@ -4,6 +4,11 @@ Relay a coerced victim's NTLM authentication into an LDAP operation executed wit
 victim's permissions, bypassing LDAP signing. Thin wrapper around Impacket's
 `ntlmrelayx.py` (it starts `ntlmrelayx` for you).
 
+## Background
+
+Full writeup of the technique and root cause:
+[**Signed, Sealed, and Relayed, NTLM-style: Bypassing LDAP Signing Through Reauthentication**](https://specterops.io/blog/2026/10/23/ldap-signing-bypass-ntlm-relay/)
+
 ## Requirements
 
 - Python 3, run as root (SMB listener on TCP/445).
